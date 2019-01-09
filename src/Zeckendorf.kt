@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
-    println(zeckendorf(args.get(0).toInt()))
+    args.forEach { println(zeckendorf(it.toInt())) }
 }
 
 fun zeckendorf(m: Int): String {
