@@ -1,5 +1,13 @@
 fun main(args: Array<String>) {
-    args.forEach { println(zeckendorf(it.toInt())) }
+    if (args.isEmpty()) {
+        println("Please enter some integers")
+    } else {
+        try {
+            args.forEach { println(zeckendorf(it.toInt())) }
+        } catch (e: Exception) {
+            println("You entered a non integer value")
+        }
+    }
 }
 
 fun zeckendorf(m: Int): String {
