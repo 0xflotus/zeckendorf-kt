@@ -20,7 +20,7 @@ fun zeckendorf(m: Int): String {
     var next = 2
     while (next <= n) {
         fibs.add(next)
-        next += fibs.get(fibs.size - 2)
+        next += fibs[fibs.size - 2]
     }
 
     var sb = ""
